@@ -56,29 +56,11 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 ###  http://iot.linkeddata.es/def/core#aboutFeatureOfInterest
 :aboutFeatureOfInterest rdf:type owl:ObjectProperty ,
                                  owl:FunctionalProperty ;
-                        rdfs:comment "Auxiliary property created for the n-ary class core:FeatureProperty to link instances of such class to the feature of interest it is about."@en ;
+
                         rdfs:label "about feature of interest"@en .
 
 
-###  http://iot.linkeddata.es/def/core#aboutProperty
-:aboutProperty rdf:type owl:ObjectProperty ,
-                        owl:FunctionalProperty ;
-               rdfs:comment "Auxiliary property created for the n-ary class core:FeatureProperty to link instances of such class to the (ssn) proeprty it is about."@en ;
-               rdfs:label "about property"@en .
 
-
-###  http://iot.linkeddata.es/def/core#actsOnFeatureProperty
-:actsOnFeatureProperty rdf:type owl:ObjectProperty ;
-                       rdfs:range :FeatureProperty ;
-                       rdfs:comment "Auxiliary property created for the n-ary class core:FeatureProperty. This property links devices (sensor or actuators) or interaction patterns to instances of the n-ary class which will be the ones linking to the properties and features of interest which the device or interaction pattern acts on."@en ;
-                       rdfs:label "acts on feature property"@en .
-
-
-###  http://iot.linkeddata.es/def/core#avatar
-:avatar rdf:type owl:ObjectProperty ;
-        rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/depiction> ;
-        rdfs:comment "A link from an entity to the image identifying it in a social network or system."@en ;
-        rdfs:label "avatar"@en .
 
 
 ###  http://iot.linkeddata.es/def/core#describes
@@ -105,33 +87,6 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                     "exposes"@en .
 
 
-###  http://iot.linkeddata.es/def/core#expressedInFormat
-:expressedInFormat rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Value ;
-                   rdfs:range <http://iot.linkeddata.es/def/wot#DataSchema> ;
-                   rdfs:comment "Link from a value to the data format in which it is expressed."@en ;
-                   rdfs:label "expressed in format"@en .
-
-
-###  http://iot.linkeddata.es/def/core#hasComponent
-:hasComponent rdf:type owl:ObjectProperty ;
-              owl:inverseOf :isComponentOf ;
-              rdfs:comment "A link between an ecosystem and the things that compose such ecosystem."@en ;
-              rdfs:label "has component"@en .
-
-
-###  http://iot.linkeddata.es/def/core#hasMaxValue
-:hasMaxValue rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf rdf:value ;
-             rdfs:range rdfs:Resource ;
-             rdfs:label "hasMaxValue"@en .
-
-
-###  http://iot.linkeddata.es/def/core#hasMinValue
-:hasMinValue rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf rdf:value ;
-             rdfs:domain rdfs:Resource ;
-             rdfs:label "hasMinValue"@en .
 
 
 ###  http://iot.linkeddata.es/def/core#hasNeighbourhood
